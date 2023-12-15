@@ -1,0 +1,21 @@
+<p>
+	{{_("Ciao")}} {{ first_name }}{% if last_name %} {{ last_name}}{% endif %},
+</p>
+{% set site_link = "<a href='" + site_url + "'>" + site_url + "</a>" %}
+<p>{{_("Ein neuer Account wurde unter {0} für Dich erstellt").format(site_link)}}.</p>
+<p>{{_("Deine Login ID ist")}}: <b>{{ user }}</b>
+<p>{{_("Klick hier um Dein Passwort zu setzen")}}.</p>
+
+<p style="margin: 15px 0px;">
+	<a href="{{ link }}" rel="nofollow" class="btn btn-primary">{{ _("Complete Registration") }}</a>
+</p>
+<br>
+<p style="margin-top: 15px">
+	{{_("Viel Spass!")}},<br>
+	{{ ("Joël")}}
+</p>
+<br>
+<p>
+	{{_("Oder kopiere folgenden Link in Dein Browser")}}<br>
+	<a href="{{ link }}">{{ link }}</a>
+</p>
